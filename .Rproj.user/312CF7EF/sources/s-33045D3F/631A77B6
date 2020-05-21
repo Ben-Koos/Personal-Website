@@ -1,19 +1,19 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1590041378795.000,
-    "dirty" : true,
+    "created" : 1590041783349.000,
+    "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
     "hash" : "0",
-    "id" : "326A9C5",
-    "lastKnownWriteTime" : 1590041216,
-    "last_content_update" : 1590041385981,
-    "path" : "~/Website/Personal-Website/config.toml",
+    "id" : "631A77B6",
+    "lastKnownWriteTime" : 1590037838,
+    "last_content_update" : 1590037838,
+    "path" : "~/Website/Academic Theme/config.toml",
     "project_path" : null,
     "properties" : {
-        "cursorPosition" : "48,0",
-        "scrollLine" : "24"
+        "cursorPosition" : "11,11",
+        "scrollLine" : "0"
     },
     "read_only" : false,
     "read_only_alternatives" : [
