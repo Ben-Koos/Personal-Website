@@ -1,12 +1,12 @@
 ---
-title: physician-group-effect
+title: Causal Forest Example 
 author: Ben Koos
 date: '2020-05-20'
-slug: physician-group-effect
+slug: causal-forest-example
 categories:
   - R
 tags:
-  - Causal Trees
+  - Causal Forest
 ---
 
 
@@ -36,7 +36,7 @@ tau.forest = causal_forest( as.matrix(X),Outome,Treat, num.trees = 100)</code></
 <h2>Average Treatment Effect:</h2>
 <pre class="r"><code>average_treatment_effect(forest =tau.forest , target.sample = &quot;treated&quot;)</code></pre>
 <pre><code>##    estimate     std.err 
-## -0.15267582  0.06115908</code></pre>
+## -0.16612054  0.06137243</code></pre>
 </div>
 <div id="heterogenous-treatment-effects" class="section level2">
 <h2>Heterogenous Treatment Effects</h2>

@@ -7,29 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>ben2koos@gmail.com (Ben Koos)</managingEditor>
     <webMaster>ben2koos@gmail.com (Ben Koos)</webMaster>
-    <lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>physician-group-effect</title>
-      <link>/post/physician-group-effect/</link>
+      <title>COVID-19 Economic Effects</title>
+      <link>/post/covid-19-economic-effects/</link>
+      <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
+      <author>ben2koos@gmail.com (Ben Koos)</author>
+      <guid>/post/covid-19-economic-effects/</guid>
+      <description>Given that I’m stuck inside becasue of COVID-19, I figured it would be a great time to start the website I had alwasy been thinking about starting. And what better post to start off with then about COVID-19.
+Given the far ranging economic consequences of forcing many millions of United States citizens to stay at home, the true economic effect of coronovirus may be inclculable.
+As someone who works in economic consulting, it’s interesting to me to think that even decades from now, economists will need to control for the effects of coronoavirus in their models.</description>
+    </item>
+    
+    <item>
+      <title>Causal Forest Example</title>
+      <link>/post/causal-forest-example/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
       <author>ben2koos@gmail.com (Ben Koos)</author>
-      <guid>/post/physician-group-effect/</guid>
+      <guid>/post/causal-forest-example/</guid>
       <description>Load and Clean Datarm(list = ls())require(grf)## Loading required package: grfrequire(ggplot2)## Loading required package: ggplot2Data = read.delim(&amp;quot;http://www.biostat.jhsph.edu/~cfrangak/biostat_causal/asthma.txt&amp;quot;)Data = data.frame( matrix( unlist( strsplit( gsub( &amp;quot;^ &amp;quot;,&amp;quot;&amp;quot;,Data[,1] ) , &amp;quot; &amp;quot;)), nrow = 276, byrow = T))colnames(Data) = c(&amp;quot;pg&amp;quot; , &amp;quot;i.age&amp;quot;, &amp;quot;i.sex&amp;quot;, &amp;quot;i.educ&amp;quot;, &amp;quot;i.insu&amp;quot;, &amp;quot;i.drug&amp;quot;, &amp;quot;i.seve&amp;quot;, &amp;quot;com.t&amp;quot;, &amp;quot;pcs.sd&amp;quot;, &amp;quot;mcs.sd&amp;quot;, &amp;quot;i.aqoc&amp;quot;)for ( i in 1:ncol(Data)) { Data[,i] = as.numeric(Data[,i])}Estimate Causal ForestX = Data[,2:10] Treat = Data$pg - 1Outome = Data$i.</description>
     </item>
     
     <item>
-      <title>About me</title>
+      <title>About</title>
       <link>/page/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
       <author>ben2koos@gmail.com (Ben Koos)</author>
       <guid>/page/about/</guid>
-      <description>My name is Inigo Montoya. I have the following qualities:
- I rock a great mustache I&amp;rsquo;m extremely loyal to my family  What else do you need?
-my history To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch my movie and it will answer all your questions.</description>
+      <description>About Hello! this is brand new personal website where I will log analysis I have done.
+Since this site is brand new, I am not entirely sure what I will post about the most, but in general I am interested in economics, machine learning, statistics and cool data visualization.</description>
     </item>
     
   </channel>

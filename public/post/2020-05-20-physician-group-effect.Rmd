@@ -1,12 +1,12 @@
 ---
-title: physician-group-effect
+title: Causal Forest Example 
 author: Ben Koos
 date: '2020-05-20'
-slug: physician-group-effect
+slug: causal-forest-example
 categories:
   - R
 tags:
-  - Causal Trees
+  - Causal Forest
 ---
 
 
