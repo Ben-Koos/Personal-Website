@@ -1,0 +1,60 @@
+---
+title: physician-group-effect
+author: Ben Koos
+date: '2020-05-20'
+slug: physician-group-effect
+categories:
+  - R
+tags:
+  - Causal Trees
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load and Clean Data 
+
+```{r }
+rm(list = ls())
+require(grf)
+require(ggplot2)
+
+Data = read.delim("http://www.biostat.jhsph.edu/~cfrangak/biostat_causal/asthma.txt")
+Data = data.frame( matrix( unlist( strsplit( gsub( "^ ","",Data[,1] ) , " ")), nrow = 276, byrow = T))
+colnames(Data) = c("pg" , "i.age", "i.sex", "i.educ", "i.insu", "i.drug", "i.seve", "com.t", "pcs.sd", "mcs.sd", "i.aqoc")
+for ( i in 1:ncol(Data))  { 
+  Data[,i] = as.numeric(Data[,i])
+}
+
+```
+
+## Estimate Causal Forest
+
+``` {r }
+X = Data[,2:10] 
+Treat = Data$pg - 1
+Outome = Data$i.aqoc
+tau.forest = causal_forest( as.matrix(X),Outome,Treat, num.trees = 100)
+```
+
+## Average Treatment Effect:
+``` {r  }
+average_treatment_effect(forest =tau.forest , target.sample = "treated")
+```
+
+## Heterogenous Treatment Effects
+
+
+```{r , echo=FALSE}
+CF_pred = predict(tau.forest, X) 
+
+ggplot(CF_pred) + 
+  geom_histogram(aes(x= predictions ),binwidth=.02, fill = "#c29a89", color = "#393133") + 
+  scale_x_continuous(breaks = seq(-0.2,0, .02) , labels = scales::percent_format(accuracy = 1)) + 
+  theme( panel.background = element_blank(),
+         legend.title = element_blank(),
+         plot.title = element_text(hjust = .5)) + 
+  labs( x = "Effect Size", y = "Count", title = "Estimated Change in Probability of Satisfaction\nAs a Result of Being in Physician Group 2")
+```
