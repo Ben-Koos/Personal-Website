@@ -18,7 +18,7 @@ image: ''
 If you play around with the slider on the interactive chart below you can see how COVID-19 spread throughout the contiguous United States.
 
 <div class="iframe-container">
-<iframe src = "https://ben-koos.shinyapps.io/static-covid-map/"  ></iframe>
+<iframe src = "https://ben-koos.shinyapps.io/static-covid-map/" height = 600px ></iframe>
 </div>
 
 When I made these charts, the first thing I noticed was how much faster the disease spread in coastal areas of the United States. Even in May, there are still numerous counties in the center of the country that haven't reported a single case of COVID-19.
@@ -26,7 +26,7 @@ When I made these charts, the first thing I noticed was how much faster the dise
 Perhaps states with (1) more urban population and (2) more connected internationally would be hit harder by the disease. These states also tend to vote Democrat. Below you can compare the spread, total cases and cases per captia of COVID-19 in states that voted Democrat vs. Republican in the 2016 presidential election. 
 
 <div class="iframe-container">
-<iframe src = "https://ben-koos.shinyapps.io/covid-map-by-party/" ></iframe>
+<iframe src = "https://ben-koos.shinyapps.io/covid-map-by-party/" height = 1000px></iframe>
 </div>
 
 ```{r include = F}
