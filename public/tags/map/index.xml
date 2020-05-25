@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Map on Ben&#39;s Blog</title>
+    <link>/tags/map/</link>
+    <description>Recent content in Map on Ben&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>ben2koos@gmail.com (Ben Koos)</managingEditor>
+    <webMaster>ben2koos@gmail.com (Ben Koos)</webMaster>
+    <lastBuildDate>Sun, 24 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/map/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spread of COVID-19</title>
+      <link>/post/spread-of-covid-19/</link>
+      <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
+      <author>ben2koos@gmail.com (Ben Koos)</author>
+      <guid>/post/spread-of-covid-19/</guid>
+      <description>If you play around with the slider on the interactive chart below you can see how COVID-19 spread throughout the United States.
+When I made these charts, the first thing I noticed was how much faster the disease appears to spread in coastal areas of the United States. Even in May, there are still numerous counties in the center of the country that haven’t reported a single case of COVID-19.</description>
+    </item>
+    
+  </channel>
+</rss>
