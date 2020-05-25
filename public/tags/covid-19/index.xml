@@ -7,30 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>ben2koos@gmail.com (Ben Koos)</managingEditor>
     <webMaster>ben2koos@gmail.com (Ben Koos)</webMaster>
-    <lastBuildDate>Sun, 24 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/covid-19/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Spread of COVID-19</title>
-      <link>/post/spread-of-covid-19/</link>
-      <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
+      <title>Spread of COVID19</title>
+      <link>/post/spread-of-covid19/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
       <author>ben2koos@gmail.com (Ben Koos)</author>
-      <guid>/post/spread-of-covid-19/</guid>
-      <description>If you play around with the slider on the interactive chart below you can see how COVID-19 spread throughout the United States.
-When I made these charts, the first thing I noticed was how much faster the disease appears to spread in coastal areas of the United States. Even in May, there are still numerous counties in the center of the country that haven’t reported a single case of COVID-19.</description>
-    </item>
-    
-    <item>
-      <title>COVID-19 Economic Effects</title>
-      <link>/post/covid-19-economic-effects/</link>
-      <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
-      <author>ben2koos@gmail.com (Ben Koos)</author>
-      <guid>/post/covid-19-economic-effects/</guid>
-      <description>Given that I’m stuck inside becasue of COVID-19, I figured it would be a great time to start the website I had alwasy been thinking about starting. And what better post to start off with then about COVID-19.
-Given the far ranging economic consequences of forcing many millions of United States citizens to stay at home, the true economic effect of coronovirus may be inclculable.
-As someone who works in economic consulting, it’s interesting to me to think that even decades from now, economists will need to control for the effects of coronoavirus in their models.</description>
+      <guid>/post/spread-of-covid19/</guid>
+      <description>If you play around with the slider on the interactive chart below you can see how COVID-19 spread throughout the contiguous United States.
+When I made these charts, the first thing I noticed was how much faster the disease spread in coastal areas of the United States. Even in May, there are still numerous counties in the center of the country that haven’t reported a single case of COVID-19.</description>
     </item>
     
   </channel>

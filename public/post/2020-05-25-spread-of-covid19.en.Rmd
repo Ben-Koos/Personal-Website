@@ -1,23 +1,18 @@
 ---
-title: Spread of COVID-19
+title: Spread of COVID19
 author: Ben Koos
-date: '2020-05-24'
-slug: spread-of-covid-19
+date: '2020-05-25'
+slug: spread-of-covid19
 categories: []
 tags:
   - COVID-19
+  - Interactive
   - Map
   - Politics
-  - Interactive
 type: ''
 subtitle: ''
 image: ''
 ---
-
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 
 If you play around with the slider on the interactive chart below you can see how COVID-19 spread throughout the contiguous United States.
@@ -73,17 +68,3 @@ ggplot( filter(NumCases, !is.na(Ratio))) +
 
 
 Of course no causal inference ought to be made from this correlation. It's very unlikely that any policy made by governments in states that voted for Clinton has caused the greater density of COVID-19 cases. It's more plausible that it's a result of greater urbanization and international connectedness in these states. I have to wonder, on a polictical level, whether this difference in incidence severity partially explains why Republican's seem more eager to reopen their states for business.     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
