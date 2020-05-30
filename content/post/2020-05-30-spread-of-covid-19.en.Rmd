@@ -1,8 +1,8 @@
 ---
-title: Spread of COVID19
+title: Spread of COVID-19
 author: Ben Koos
-date: '2020-05-25'
-slug: spread-of-covid19
+date: '2020-05-30'
+slug: spread-of-covid-19
 categories: []
 tags:
   - COVID-19
@@ -13,6 +13,7 @@ type: ''
 subtitle: ''
 image: ''
 ---
+
 
 
 If you play around with the slider on the interactive chart below you can see how COVID-19 spread throughout the contiguous United States.
