@@ -6,10 +6,6 @@
     <description>Recent content in Categories on Ben&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>ben2koos@gmail.com (Ben Koos)</managingEditor>
-    <webMaster>ben2koos@gmail.com (Ben Koos)</webMaster>
-    
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <webMaster>ben2koos@gmail.com (Ben Koos)</webMaster><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

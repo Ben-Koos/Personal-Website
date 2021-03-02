@@ -7,10 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>ben2koos@gmail.com (Ben Koos)</managingEditor>
     <webMaster>ben2koos@gmail.com (Ben Koos)</webMaster>
-    <lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spread of COVID-19 Update</title>
+      <link>/post/spread-of-covid-19-update/</link>
+      <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
+      <author>ben2koos@gmail.com (Ben Koos)</author>
+      <guid>/post/spread-of-covid-19-update/</guid>
+      <description>Covid UpdateThe two gifs show the spread of Covid-19 from the date of the first reported case (January 21, 2020) to December 12, 2020, and the total fatalities per country between the first reported covid death (February 29, 2020) to December 12, 2020, respectively. The virus spread more rapidly, and killed more in densley populated urban areas. It took significantly longer for covid to infect midwestern states.
+Covid SpreadCovid 19 spread rapidly.</description>
+    </item>
     
     <item>
       <title>Spread of COVID-19</title>

@@ -1,0 +1,130 @@
+---
+title: Spread of COVID-19 Update
+author: Ben Koos
+date: '2020-12-13'
+slug: spread-of-covid-19-update
+categories: []
+tags:
+  - COVID-19
+  - Interactive
+  - Map
+type: ''
+subtitle: ''
+image: ''
+---
+
+ 
+```{r include = F}
+require(ggplot2)
+require(dplyr)
+require(reshape2)
+require(scales)
+```
+
+
+# Covid Update 
+ 
+The two gifs show the spread of Covid-19 from the date of the first reported case (January 21, 2020) to December 12, 2020, and the total fatalities per country between the first reported covid death (February 29, 2020) to December 12, 2020, respectively. The virus spread more rapidly, and killed more in densley populated urban areas. It took significantly longer for covid to infect midwestern states.  
+
+### Covid Spread
+Covid 19 spread rapidly. 
+
+![Covid Update](\post\2020-12-13-spread-of-covid-19-update.en_files\gifs\Dec 12 2020 Update.gif)
+
+## Covid Death  
+![Covid Death](\post\2020-12-13-spread-of-covid-19-update.en_files\gifs\Dec 12 2020 Death.gif)
+
+
+### Comparison of Cases
+
+Initially, Covid-19 spread and killed mostly in states that eventually voted for Joe Biden in 2020. The ratios in the two charts below are adjusted for population. Meaning the ratio of per capita death rate was briefly over 8:1 in April of 2020. However, though initially much worse in blue states, this ratio has steadly evened out. By December of 2020, this ratio of per capita cases in blue states to per capita cases in red states was around 1.5 and the ratio of per capita deaths was just over 2.    
+
+```{r echo = F}
+
+covid_data = read.csv("C:\\Users\\Ben Koos\\Documents\\Projects\\COVID 19\\Output\\2020-12-13-COVID Data Combined.csv")
+
+NumCases = covid_data %>% 
+  group_by( date , voteD) %>% 
+  summarize( cases   = sum(cases),
+             tot_pop = sum(pop, na.rm = T),
+             cpp     = as.character(signif(cases/tot_pop*100000,3))) %>% 
+  dcast(  date ~ voteD  , value.var = c('cpp')) 
+
+colnames(NumCases) = c("date", "repub" , "demo")
+
+NumCases$Ratio = as.numeric(NumCases$demo)/as.numeric(NumCases$repub)
+
+ggplot( filter(NumCases, !is.na(Ratio))) + 
+  geom_line(aes(x= as.Date(date), y = Ratio), color = '#49514a', size = 1.6) +
+  scale_x_date( date_labels = "%b %Y" , date_breaks = "1 month", expand = c(0,0)) + 
+  scale_y_continuous( breaks = c(0:6), expand = c(0,0)) + 
+  theme( axis.text.x = element_text(angle = 45, vjust = .5),
+         panel.background = element_blank(),
+         panel.grid.major.x = element_line(color = "#ceb69d"),
+         panel.grid.major.y = element_line(color = "#ceb69d"),
+         plot.title = element_text(hjust = .5)) +
+  labs( y = "Ratio", x = "" , title = "Ratio of per Capita COVID-19 Cases\nStates that Voted for Biden vs. States that Voted for Trump (2016)")
+
+```
+
+
+### Comparison of Death 
+
+```{r echo = F}
+
+NumCases = covid_data %>% 
+  filter( date >= as.Date("2020-3-10")) %>%
+  group_by( date , voteD) %>% 
+  summarize( deaths   = sum(deaths),
+             tot_pop = sum(pop, na.rm = T),
+             dpp     = as.character(signif(deaths/tot_pop*100000,3))) %>% 
+  dcast(  date ~ voteD  , value.var = c('dpp')) 
+
+colnames(NumCases) = c("date", "repub" , "demo")
+
+NumCases$Ratio = as.numeric(NumCases$demo)/as.numeric(NumCases$repub)
+
+ggplot( filter(NumCases, !is.na(Ratio))) + 
+  geom_line(aes(x= as.Date(date), y = Ratio), color = '#49514a', size = 1.6) +
+  scale_x_date( date_labels = "%b %Y" , date_breaks = "1 month", expand = c(0,0)) + 
+  scale_y_continuous( breaks = c(0:8), expand = c(0,0),limits = c(0,10) ) + 
+  theme( axis.text.x = element_text(angle = 45, vjust = .5),
+         panel.background = element_blank(),
+         panel.grid.major.x = element_line(color = "#ceb69d"),
+         panel.grid.major.y = element_line(color = "#ceb69d"),
+         plot.title = element_text(hjust = .5)) +
+  labs( y = "Ratio", x = "" , title = "Ratio of per Capita COVID-19 Cases\nStates that Voted for Biden vs. States that Voted for Trump (2016)") 
+
+```
+
+
+### Deaths per case
+
+the first reported COVID-19 death in the United States was on February 29, 2020. 4 days later on March 3, 2020, total reported deaths as a percentage of total reported cases peaked at 8%, when there was 10 reported deaths and 125 reported cases. Of course the death rate was likely never this high; instead, this data point probably reflects a lack of reporting of cases in the the early days of the pandemic. As more cases were reported, the reported death rate fell from 8% to under 2% before climbing to 6% in May of 2020. Unlike the initial spike in reported rate, by May there were over 1,000,000 cases in the United States at over 60,000 deaths. Thankfully, since then, the reported death rate has trended downward and fell under 2% in December. 
+
+```{r echo = F}
+
+
+covid = read.csv( "C:\\Users\\Ben Koos\\Documents\\Projects\\COVID 19\\Output\\2020-12-13-COVID Data Combined.csv", stringsAsFactors = F)
+
+
+covid_nationwide = covid %>% 
+  group_by(date) %>% 
+  summarise(cases = sum(cases),
+            death = sum(deaths)) %>% 
+  mutate(dpc = death/cases)
+
+
+ggplot( covid_nationwide ) + 
+  geom_line(aes(x= as.Date(date), y = dpc), color = '#49514a', size = 1.6) +
+  scale_x_date(  date_labels = "%b %Y" , date_breaks = "1 month", expand = c(0,.0)) + 
+  scale_y_continuous( limit = c(0,NA) ,labels = percent, expand = c(0,.0002)) +
+  theme( axis.text.x = element_text(angle = 45, vjust = .5),
+         panel.background = element_blank(),
+         panel.grid.major.x = element_line(color = "#ceb69d"),
+         panel.grid.major.y = element_line(color = "#ceb69d"),
+         plot.title = element_text(hjust = .5)) +
+  labs( y = "", x = "" , title = "Total Reported Deaths as a % of Total Reported Cases") 
+
+
+```
