@@ -1,0 +1,21 @@
+---
+title: Subreddit Sentiment Analysis
+author: Ben Koos
+date: '2020-07-12'
+slug: subreddit-sentiment-analysis
+categories: []
+tags:
+  - Sentiment-Analysis NLP Reddit
+type: ''
+subtitle: ''
+image: ''
+---
+
+
+## Analyzing subreddit sentiment 
+
+Have you ever wondered which reddit community is the most postive and which the most negative? Well, the figure below show the average of comment sentiment score by subreddit. Given r/PublicFreakout's dedictiation to showing videos of "people freaking out, melting down, losing their cool, or being weird in public" it's no wonder its average comment sentiment is the lowest of the top 100. We can also see that commentors on subreddits such as r/mildlyinfuriating, r/news and r/politics tend to leave relatively negative comments. Again, given the nature of r/mildlyinfuriating and the diviseness of news and politics, these placements are rather unsurprising. But perhaps you, fellow redditor, are looking for a break from the negativity. Then, scroll to the bottom of the figure below, and you'll see that r/gardening is the best place to go. In fact, r/gardening is the only subreddit with an average sentiment over 0.3. 
+
+![Subreddit Sentiment Analysis](\post\2020-07-12-subreddit-sentiment-analysis.en_files\All Subs Mean Sentiment.png)
+
+To make this chart, I used Python's PRAW module to scarpe comments from the top 1,000 posts (by post score) of each of the top 100 subreddits for the month ending June 20, 2020. I then used Python's TextBlog module to caclualte the overall sentiment of each comment. Each comment can have a sentiment ranging from -1 (very negative sentiment) to 1 (very positive sentiment).  
