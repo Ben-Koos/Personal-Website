@@ -24,7 +24,7 @@ Covid SpreadCovid 19 spread rapidly.</description>
       <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
       <author>ben2koos@gmail.com (Ben Koos)</author>
       <guid>/post/subreddit-sentiment-analysis/</guid>
-      <description>Analyzing subreddit sentimentHave you ever wondered which reddit community is the most postive and which the most negative? Well, the figure below show the average of comment sentiment score by subreddit. Given r/PublicFreakout’s dedictiation to showing videos of “people freaking out, melting down, losing their cool, or being weird in public” it’s no wonder its average comment sentiment is the lowest of the top 100. We can also see that commentors on subreddits such as r/mildlyinfuriating, r/news and r/politics tend to leave relatively negative comments.</description>
+      <description>Have you ever wondered which reddit community is the most postive and which the most negative? Well, the figure below shows the average of comment sentiment score by subreddit. Given r/PublicFreakout’s dedictiation to “people freaking out, melting down, losing their cool, or being weird in public” it’s no wonder its average comment sentiment is the lowest of the top 100 subreddits. We can also see that commentors on subreddits such as r/mildlyinfuriating, r/news and r/politics tend to leave relatively negative comments.</description>
     </item>
     
     <item>
@@ -43,8 +43,8 @@ Covid SpreadCovid 19 spread rapidly.</description>
       <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
       <author>ben2koos@gmail.com (Ben Koos)</author>
       <guid>/page/about/</guid>
-      <description>About Hello! this is brand new personal website where I will log analysis I have done.
-Since this site is brand new, I am not entirely sure what I will post about the most, but in general I am interested in economics, machine learning, statistics and cool data visualization.</description>
+      <description>About me Hello! This is personal website where I occasionally post data analysis I&amp;rsquo;ve created myself.
+You&amp;rsquo;ll find short posts on a variety of topics I am interested in, such as economics, machine learning, statistics and cool data visualization.</description>
     </item>
     
   </channel>

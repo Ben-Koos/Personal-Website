@@ -5,17 +5,14 @@ date: '2020-07-12'
 slug: subreddit-sentiment-analysis
 categories: []
 tags:
-  - Sentiment-Analysis NLP Reddit
+  - Sentiment-Analysis Reddit
 type: ''
 subtitle: ''
 image: ''
 ---
 
-
-## Analyzing subreddit sentiment 
-
-Have you ever wondered which reddit community is the most postive and which the most negative? Well, the figure below show the average of comment sentiment score by subreddit. Given r/PublicFreakout's dedictiation to showing videos of "people freaking out, melting down, losing their cool, or being weird in public" it's no wonder its average comment sentiment is the lowest of the top 100. We can also see that commentors on subreddits such as r/mildlyinfuriating, r/news and r/politics tend to leave relatively negative comments. Again, given the nature of r/mildlyinfuriating and the diviseness of news and politics, these placements are rather unsurprising. But perhaps you, fellow redditor, are looking for a break from the negativity. Then, scroll to the bottom of the figure below, and you'll see that r/gardening is the best place to go. In fact, r/gardening is the only subreddit with an average sentiment over 0.3. 
+Have you ever wondered which reddit community is the most postive and which the most negative? Well, the figure below shows the average of comment sentiment score by subreddit. Given r/PublicFreakout's dedictiation to "people freaking out, melting down, losing their cool, or being weird in public" it's no wonder its average comment sentiment is the lowest of the top 100 subreddits. We can also see that commentors on subreddits such as r/mildlyinfuriating, r/news and r/politics tend to leave relatively negative comments. Again, given the nature of r/mildlyinfuriating and the diviseness of news and politics, these rankings are rather unsurprising. But perhaps you're looking for a break from the negativity. Then scroll to the bottom of the figure below and you'll see that r/gardening is the best place to go! In fact, r/gardening is the only subreddit with an average sentiment over 0.3. 
 
 ![Subreddit Sentiment Analysis](\post\2020-07-12-subreddit-sentiment-analysis.en_files\All Subs Mean Sentiment.png)
 
-To make this chart, I used Python's PRAW module to scarpe comments from the top 1,000 posts (by post score) of each of the top 100 subreddits for the month ending June 20, 2020. I then used Python's TextBlog module to caclualte the overall sentiment of each comment. Each comment can have a sentiment ranging from -1 (very negative sentiment) to 1 (very positive sentiment).  
+To make this chart, I first used Python's PRAW module to scarpe comments from the top 1,000 posts (by post score) of each of the top 100 subreddits for the month ending June 20, 2020. I then used Python's TextBlog module to calculate the overall sentiment of each comment. Each comment can have a sentiment ranging from -1 (very negative sentiment) to 1 (very positive sentiment). Textblog calculates comment sentiment by comparing each word in the comment to a pre-defined dictionary classifying words as positive or negative. TextBlob also takes into account intensity (i.e. very postive vs. somewhat positive) and negations (ex. "Not happy" is a negative sentiment). Once each word in the comment is assigned a sentiment, the individual sentiments are pooled into a final overall sentiment.
