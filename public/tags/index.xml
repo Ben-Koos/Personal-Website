@@ -36,11 +36,20 @@
     </item>
     
     <item>
-      <title>Sentiment-Analysis Reddit</title>
-      <link>/tags/sentiment-analysis-reddit/</link>
+      <title>Reddit</title>
+      <link>/tags/reddit/</link>
       <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
       <author>ben2koos@gmail.com (Ben Koos)</author>
-      <guid>/tags/sentiment-analysis-reddit/</guid>
+      <guid>/tags/reddit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment-Analysis</title>
+      <link>/tags/sentiment-analysis/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+      <author>ben2koos@gmail.com (Ben Koos)</author>
+      <guid>/tags/sentiment-analysis/</guid>
       <description></description>
     </item>
     

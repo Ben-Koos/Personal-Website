@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reddit on Ben&#39;s Blog</title>
+    <link>/tags/reddit/</link>
+    <description>Recent content in Reddit on Ben&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>ben2koos@gmail.com (Ben Koos)</managingEditor>
+    <webMaster>ben2koos@gmail.com (Ben Koos)</webMaster>
+    <lastBuildDate>Sun, 12 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/reddit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Subreddit Sentiment Analysis</title>
+      <link>/post/subreddit-sentiment-analysis/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+      <author>ben2koos@gmail.com (Ben Koos)</author>
+      <guid>/post/subreddit-sentiment-analysis/</guid>
+      <description>Have you ever wondered which reddit community is the most postive and which the most negative? Well, the figure below shows the average of comment sentiment score by subreddit. Given r/PublicFreakout’s dedictiation to “people freaking out, melting down, losing their cool, or being weird in public” it’s no wonder its average comment sentiment is the lowest of the top 100 subreddits. We can also see that commentors on subreddits such as r/mildlyinfuriating, r/news and r/politics tend to leave relatively negative comments.</description>
+    </item>
+    
+  </channel>
+</rss>

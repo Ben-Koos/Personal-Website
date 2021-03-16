@@ -5,7 +5,8 @@ date: '2020-07-12'
 slug: subreddit-sentiment-analysis
 categories: []
 tags:
-  - Sentiment-Analysis Reddit
+  - Sentiment-Analysis 
+  - Reddit
 type: ''
 subtitle: ''
 image: ''
